@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import InteractiveCalculator from './components/InteractiveCalc'
+import Calculator from './components/calculator'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/*
+import './App.css'
+import Navbar from './components/navbar.js'
+import './components/navbar.css'
+import Footer from './components/footer.js'
+import './components/footer.css'
+import Section from './components/section.js'
+import './components/section.css'
+
+//import styled from 'styled-components'
+*/
+/*
+    <body>
+        <Navbar />
+
+        <main>
+          <Section />
+  
+
+
+        </main>
+
+        
+      </body>
+      
+
+*/
+
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+  render() {
+    return (
+      <Calculator />
+  
+    )
+  }
+
 }
-
 export default App;

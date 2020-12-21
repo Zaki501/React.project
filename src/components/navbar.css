@@ -1,0 +1,36 @@
+
+header {
+    display: flex;
+    width: 100vw;
+    background-color:rgba(102, 102, 102, 0.7);
+    position: fixed;
+    height: 80px;
+    top: 0;
+}
+header nav {
+    width: 350px;
+    margin-left: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+header nav a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+
+   
+}
+header nav a:hover {
+    color: rgb(0, 0, 165);
+}
+nav img {
+    position: absolute;
+    left: 400px;
+    height: 80px;
+    opacity: unset;
+}
